@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -16,8 +18,8 @@
 }
 
 @font-face {
-    font-family: first-font;
-    src: url(../Sign-Up-Form/font/RobotoCondensed-Regular.ttf);
+  font-family: first-font;
+  src: url(../Sign-Up-Form/font/RobotoCondensed-Regular.ttf);
 }
 
 body {
@@ -26,21 +28,37 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  height: 100vh;
+  display: flex;
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -48,23 +66,86 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 
-h1{
-    font-family: first-font, sans-serif;
+h1 {
+  font-family: first-font, sans-serif;
 }
 
 
-.leftSideContainer{
-    background-image: url(./img/background.jpg);
+
+.leftSideContainer {
+  background-image: url(./img/background.jpg);
+  flex: 1 0 30%;
+  position: relative;
+}
+
+.prompt,
+.credit {
+  color: white;
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backgroundElement {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+
+  width: 100%;
+  height: 150px;
+  top: 150px;
+
+  z-index: 0;
+}
+
+.prompt {
+  position: absolute;
+  top: 175px;
+  left: 125px;
+}
+
+.prompt h1 {
+  font-size: 3rem;
+}
+
+.prompt img {
+  height: 100px;
+}
+
+.credit {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+
+
+.rightSideContainer {
+  flex: 1 1 70%;
 }
