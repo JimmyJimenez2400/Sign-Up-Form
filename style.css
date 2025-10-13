@@ -106,7 +106,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .backgroundElement {
@@ -116,14 +115,14 @@ h1 {
 
   width: 100%;
   height: 150px;
-  top: 150px;
+  top: 120px;
 
   z-index: 0;
 }
 
 .prompt {
   position: absolute;
-  top: 175px;
+  top: 145px;
   left: 125px;
 }
 
@@ -148,4 +147,45 @@ h1 {
 
 .rightSideContainer {
   flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: grey;
+}
+
+.signatureText,
+.signUpForm form {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.signatureText {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.signatureText>p {
+  margin-bottom: 30px;
+}
+
+.signUpForm {
+  background-color: white;
+  padding: 10px 0;
+}
+
+.signUpForm form {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpForm form>fieldset {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.form_title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }

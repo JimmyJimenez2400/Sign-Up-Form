@@ -28,38 +28,44 @@
       <div class="signatureText">
         <p>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
       <div class="signUpForm">
-        <p>Let's do this!</p>
         <form action="">
+          <p class="form_title">Let's do this!</p>
           <fieldset>
             <label for="first_name">FIRST NAME</label>
             <input type="text" id="first-name" name="first-name" />
 
-            <label for="last_name">LAST NAME</label>
-            <input type="text" id="last_name" name="last_name" />
-          </fieldset>
-          <fieldset>
             <label for="user_email">EMAIL</label>
             <input type="email" id="user_email" name="email" />
+          </fieldset>
+          <fieldset>
+            <label for="last_name">LAST NAME</label>
+            <input type="text" id="last_name" name="last_name" />
 
             <label for="phone_number">PHONE NUMBER</label>
             <input type="number" id="phone_number" name="phone_number" />
           </fieldset>
           <fieldset>
-            <label for="user_password"></label>
+            <label for="user_password">PASSWORD</label>
+            <input type="password" id="user_password" name="user_password" />
+
+            <label for="user_password">CONFIRM PASSWORD</label>
             <input type="password" id="user_password" name="user_password" />
           </fieldset>
-
-          <button type="Submit">Create Account</button>
-          <p>
-            Already have an account? <a href="#" class="login_text">Log In</a>
-          </p>
         </form>
       </div>
+      <section class="submitButton">
+        <button type="Submit">Create Account</button>
+        <p>
+          Already have an account? <a href="#" class="login_text">Log In</a>
+        </p>
+      </section>
     </section>
   </body>
 </html>
