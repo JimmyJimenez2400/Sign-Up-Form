@@ -38,31 +38,71 @@
         <form action="">
           <p class="form_title">Let's do this!</p>
           <fieldset>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
+            <div class="inputContainer">
+              <label for="first_name">FIRST NAME</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
 
-            <label for="user_email">EMAIL</label>
-            <input type="email" id="user_email" name="email" />
+            <div class="inputContainer">
+              <label for="user_email">EMAIL</label>
+              <input
+                type="email"
+                id="user_email"
+                name="email"
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
           </fieldset>
           <fieldset>
-            <label for="last_name">LAST NAME</label>
-            <input type="text" id="last_name" name="last_name" />
-
-            <label for="phone_number">PHONE NUMBER</label>
-            <input type="number" id="phone_number" name="phone_number" />
+            <div class="inputContainer">
+              <label for="last_name">LAST NAME</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="number" id="phone_number" name="phone_number" />
+            </div>
           </fieldset>
           <fieldset>
-            <label for="user_password">PASSWORD</label>
-            <input type="password" id="user_password" name="user_password" />
-
-            <label for="user_password">CONFIRM PASSWORD</label>
-            <input type="password" id="user_password" name="user_password" />
+            <div class="inputContainer">
+              <label for="user_password">PASSWORD</label>
+              <input
+                type="password"
+                id="user_password"
+                name="user_password"
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="user_password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="user_password"
+                name="user_password"
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
           </fieldset>
         </form>
       </div>
       <section class="submitButton">
-        <button type="Submit">Create Account</button>
-        <p>
+        <button type="Submit" class="createActn-Btn">Create Account</button>
+        <p class="accountText">
           Already have an account? <a href="#" class="login_text">Log In</a>
         </p>
       </section>

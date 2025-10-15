@@ -43,12 +43,38 @@ svg {
   max-width: 100%;
 }
 
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 /* 7. Inherit fonts for form controls */
 input,
 button,
 textarea,
 select {
   font: inherit;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
 }
 
 /* 8. Avoid text overflows */
@@ -150,11 +176,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: grey;
+  background-color: rgb(249, 250, 251);
 }
 
 .signatureText,
-.signUpForm form {
+.signUpForm form,
+.submitButton {
   width: 80%;
   margin-left: 50px;
 }
@@ -169,8 +196,9 @@ h1 {
 }
 
 .signUpForm {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px 0;
+  margin-bottom: 20px;
 }
 
 .signUpForm form {
@@ -182,10 +210,44 @@ h1 {
 .signUpForm form>fieldset {
   margin-bottom: 20px;
   display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
 }
 
 .form_title {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  border: none;
+}
+
+.inputContainer input {
+  width: 70%;
+}
+
+.createActn-Btn {
+  background-color: #596D48;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 65px;
+  width: auto;
+  cursor: pointer;
+}
+
+.accountText {
+  margin-top: 20px;
+}
+
+.login_text {
+  color: #596D48;
+  text-decoration: none;
 }
